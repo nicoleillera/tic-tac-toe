@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  margin: 0;
+  background-color: #2d364e;
+  color: white;
+}
+
+/* .container {
+  padding: 0 2.5%;
+} */
+
+.box {
+  height: 130px;
+  width: 130px;
+  background-color: #e6e8ef;
+  color: black;
+  border-width: 0.5px;
+  font-size: 50px;
+  /* flex: 1; */
+}
+/* 
+added flex to row and flex 1 to box to make boxes stay fixed in place, and not move down when clicked
+- When text is added to box, size changes and the box moves to make space, but if row is flex then it allows box to adjust
+itself accordingly??? -
+ */
+
+.row {
+  display: flex;
+  height: 130px;
+  width: 390px;
+}
+
+.app {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+#winGame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+#winText {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#restartButton {
+  border-radius: 5px;
+  background-color: #b2e6fa;
+  height: 30px;
+}
+
+/* .reset {
+  margin-top: 15px;
+  background-color: rgb(15, 49, 129);
+  border-radius: 5px;
+  color: white;
+  padding: 7px 14px;
+  border-width: 0.5px;
+} */
