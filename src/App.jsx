@@ -93,7 +93,7 @@ function Board() {
             Play Again
           </button>
         ) : null}
-        {winText ? <Confetti numberOfPieces={100} /> : null}
+        {winText ? <Confetti numberOfPieces={100} gravity={1} /> : null}
       </div>
     </>
   );
